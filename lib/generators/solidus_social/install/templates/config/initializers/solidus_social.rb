@@ -37,8 +37,6 @@ Spree::SocialConfig.configure do |config|
   }
 end
 
-SolidusSocial.init_providers
-
 OmniAuth.config.logger = Logger.new(STDOUT)
 OmniAuth.logger.progname = 'omniauth'
 
