@@ -8,6 +8,7 @@ class Spree::AuthenticationMethod < ApplicationRecord
   end
 
   validates :provider, presence: true, uniqueness: { scope: :store }
+  validates :display_name, presence: true
 
   def self.active_authentication_methods?
     where(environment: ::Rails.env, active: true).exists?

@@ -25,6 +25,12 @@
   </div>
   <div class="alpha four columns">
     <div class="field">
+      <%= f.label :display_name, I18n.t('spree.social_display_name') %>
+      <%= f.text_field :display_name %>
+    </div>
+  </div>
+  <div class="alpha four columns">
+    <div class="field">
       <%= f.label :site, I18n.t('spree.social_site') %>
       <%= f.text_field :site %>
     </div>

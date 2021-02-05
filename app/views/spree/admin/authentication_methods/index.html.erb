@@ -28,6 +28,7 @@
       <th><%= I18n.t('spree.store') %></th>
       <th><%= I18n.t('spree.social_provider') %></th>
       <th><%= I18n.t('spree.site') %></th>
+      <th><%= I18n.t('spree.social_display_name') %></th>
       <th><%= I18n.t('spree.social_api_key') %></th>
       <th><%= I18n.t('spree.social_api_secret') %></th>
       <th><%= I18n.t('spree.environment') %></th>
@@ -39,6 +40,7 @@
         <tr id="<%= dom_id method %>" data-hook="admin_trackers_index_rows">
           <td class="align-center"><%= method.store %></td>
           <td class="align-center"><%= method.provider %></td>
+          <td class="align-center"><%= method.display_name %></td>
           <td class="align-center"><%= method.site %></td>
           <td class="align-center"><%= truncate method.api_key, length: 10 %></td>
           <td class="align-center"><%= truncate method.api_secret, length: 10 %></td>
