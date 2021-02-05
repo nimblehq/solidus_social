@@ -1,13 +1,13 @@
 class AddLoginNameToAuthenticationMethods < ActiveRecord::Migration[6.1]
   def up
     change_table :spree_authentication_methods do |t|
-      t.string  :login_name
+      t.string  :display_name
     end
   end
 
   def down
     change_table :spree_authentication_methods do |t|
-      t.remove :login_name
+      t.remove :display_name
     end
   end
 end
