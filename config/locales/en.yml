@@ -17,6 +17,8 @@ en:
     remove_authentication_option_confirmation: "Are you sure you would like to remove this authentication method?"
     sign_into_account: "You can sign into this account using:"
     sign_in_through_one_of_these_services: "Sign in through one of these services:"
+    social_site: "Social Site"
+    social_display_name: "Display Name"
     social_api_key: "API Key"
     social_api_secret: "API Secret"
     social_authentication_methods: "Social Authentication Methods"
